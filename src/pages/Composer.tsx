@@ -68,9 +68,10 @@ export const Composer = () => {
       <section className="relative min-h-[70vh] bg-[#111111] overflow-hidden flex flex-col pt-32 md:pt-40 pb-20 px-5 md:px-8">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=2000" 
+            src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fm=webp&fit=crop&q=80&w=2000" 
             alt="Pizza dough" 
             className="w-full h-full object-cover opacity-30"
+            fetchPriority="high"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#111111] via-black/40 to-transparent"></div>
           <div className="absolute bottom-0 left-0 w-1/2 h-1/2 bg-[#E30613]/15 blur-[120px] rounded-full -translate-x-1/4 translate-y-1/4"></div>
@@ -120,7 +121,12 @@ export const Composer = () => {
             >
               <div className="relative w-full max-w-[450px] aspect-square">
                  <div className="absolute inset-0 bg-white/5 rounded-full border border-white/10 animate-pulse"></div>
-                 <img src="https://images.unsplash.com/photo-1613564834361-9436948817d1?auto=format&fit=crop&q=80&w=800" alt="Pizza preview" className="w-full h-full object-contain relative z-10 drop-shadow-[0_20px_50px_rgba(227,6,19,0.3)] rotate-12" />
+                 <img 
+                   src="https://images.unsplash.com/photo-1613564834361-9436948817d1?auto=format&fm=webp&fit=crop&q=80&w=800" 
+                   alt="Pizza preview" 
+                   className="w-full h-full object-contain relative z-10 drop-shadow-[0_20px_50px_rgba(227,6,19,0.3)] rotate-12" 
+                   loading="eager"
+                 />
                  
                  <div className="paper-card p-4 absolute top-0 -left-10 rotate-[-12deg] shadow-xl">
                    <span className="font-black text-[#111111]">Base crème</span>

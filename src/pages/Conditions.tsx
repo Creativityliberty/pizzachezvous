@@ -32,9 +32,10 @@ export const Conditions = () => {
       <section className="relative min-h-[62vh] bg-[#111111] overflow-hidden flex flex-col pt-32 md:pt-40 pb-20 px-5 md:px-8">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=2000" 
+            src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fm=webp&fit=crop&q=80&w=2000" 
             alt="Pizza menu background" 
             className="w-full h-full object-cover opacity-20"
+            fetchPriority="high"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#111111] via-black/40 to-transparent"></div>
           <div className="absolute bottom-0 right-0 w-1/3 h-1/2 bg-[#E30613]/10 blur-[120px] rounded-full translate-x-1/4"></div>

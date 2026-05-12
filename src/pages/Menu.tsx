@@ -88,9 +88,10 @@ export const Menu = () => {
       <section className="relative min-h-[65vh] bg-[#111111] overflow-hidden flex flex-col pt-32 md:pt-40 pb-20 px-5 md:px-8">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&q=80&w=2000" 
+            src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fm=webp&fit=crop&q=80&w=2000" 
             alt="Pizza background" 
             className="w-full h-full object-cover opacity-40"
+            fetchPriority="high"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#111111] via-black/40 to-transparent"></div>
           <div className="absolute bottom-0 left-0 w-1/2 h-1/2 bg-[#E30613]/10 blur-[120px] rounded-full -translate-x-1/4 translate-y-1/4"></div>
@@ -286,7 +287,12 @@ export const Menu = () => {
                 className="paper-card rounded-[2rem] p-4 flex flex-col group hover:-translate-y-3 transition-all duration-500 shadow-xl relative border-2 border-transparent hover:border-[#FFD21A]"
               >
                 <div className="aspect-[4/3] rounded-[1.5rem] overflow-hidden bg-black mb-6 relative">
-                  <img src={product.image} alt={product.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                  <img 
+                    src={product.image} 
+                    alt={product.name} 
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
+                    loading="lazy"
+                  />
                   <div className="absolute top-4 right-4 bg-[#FFD21A] text-[#111111] font-black text-sm px-3 py-1 rounded shadow-lg rotate-3">
                     {product.price}
                   </div>
@@ -436,7 +442,13 @@ export const Menu = () => {
       {/* SECTION 8 — BASE CRÈME OR BASE TOMATE CTA */}
       <section className="bg-[#111111] py-24 md:py-32 px-5 md:px-8 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-full h-full pointer-events-none opacity-20">
-           <img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&q=40&w=2000" className="w-full h-full object-cover" alt="texture" aria-hidden="true" />
+           <img 
+             src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fm=webp&fit=crop&q=40&w=2000" 
+             className="w-full h-full object-cover" 
+             alt="texture" 
+             aria-hidden="true" 
+             loading="lazy"
+           />
         </div>
         
         <div className="max-w-7xl mx-auto relative z-10">

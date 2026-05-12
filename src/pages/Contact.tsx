@@ -42,9 +42,10 @@ export const Contact = () => {
       <section className="relative min-h-[68vh] bg-[#111111] overflow-hidden flex flex-col pt-32 md:pt-40 pb-20 px-5 md:px-8">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=2000" 
+            src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fm=webp&fit=crop&q=80&w=2000" 
             alt="Store counter" 
             className="w-full h-full object-cover opacity-30"
+            fetchPriority="high"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#111111] via-black/40 to-transparent"></div>
           <div className="absolute bottom-0 left-0 w-1/2 h-1/2 bg-[#E30613]/15 blur-[120px] rounded-full -translate-x-1/4 translate-y-1/4"></div>

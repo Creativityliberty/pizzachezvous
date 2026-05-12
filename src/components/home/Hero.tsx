@@ -10,10 +10,11 @@ export const Hero = () => {
       {/* Background Visual */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=2000" 
+          src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fm=webp&fit=crop&q=80&w=2000" 
           alt="Delicious pizza background" 
           className="w-full h-full object-cover object-center opacity-60 absolute inset-0 animate-pulse"
           style={{ animationDuration: '8s' }}
+          fetchPriority="high"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#111111] via-black/40 to-transparent"></div>
         <div className="absolute inset-0 bg-black/50"></div>
@@ -85,9 +86,10 @@ export const Hero = () => {
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] border-4 border-dashed border-[#FFD21A]/20 rounded-full animate-[spin_20s_linear_infinite]"></div>
               
               <img 
-                src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&q=80&w=800" 
+                src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fm=webp&fit=crop&q=80&w=800" 
                 className="w-full h-full object-cover rounded-full border-8 border-white/5 shadow-[0_32px_80px_rgba(0,0,0,0.5)] pizza-steam relative z-10"
                 alt="Pizza Chez Vous special"
+                loading="eager"
               />
               
               {/* Floating Cards - Paper style */}

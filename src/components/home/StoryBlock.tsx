@@ -16,9 +16,11 @@ export const StoryBlock = () => {
             <div className="paper-card rounded-[2.5rem] p-4 shadow-2xl relative rotate-[-2deg]">
               <div className="rounded-[2rem] overflow-hidden aspect-[4/5] relative bg-[#111111] flex flex-col items-center justify-center p-8 text-center text-white">
                 <img 
-                  src="https://images.unsplash.com/photo-1590947132387-155cc02f3212?auto=format&fit=crop&q=80&w=800" 
+                  src="https://images.unsplash.com/photo-1590947132387-155cc02f3212?auto=format&fm=webp&fit=crop&q=80&w=800" 
                   alt="Préparation de pâte à pizza artisanale" 
                   className="absolute inset-0 w-full h-full object-cover opacity-30"
+                  loading="lazy"
+                  referrerPolicy="no-referrer"
                 />
                 <div className="relative z-10 flex flex-col items-center gap-6 mt-auto mb-6">
                   <h3 className="font-heading font-black text-4xl">Charles et Louis Fairier</h3>

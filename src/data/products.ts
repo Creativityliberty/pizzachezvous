@@ -19,7 +19,7 @@ export const featuredProducts: Product[] = [
     price: "12,00 €",
     pricePrefix: "À partir de",
     ingredients: ["Crème fraîche", "tenders", "sauce Crousty", "sauce Sriracha", "sésame", "persil"],
-    image: "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&q=80&w=600&h=600",
+    image: "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fm=webp&fit=crop&q=80&w=600&h=600",
     featured: true,
     tags: ["Spéciale"]
   },
@@ -30,7 +30,7 @@ export const featuredProducts: Product[] = [
     price: "11,00 €",
     pricePrefix: "À partir de",
     ingredients: ["Crème fraîche", "Tranches de saumon fumé", "citron de Sicile"],
-    image: "https://images.unsplash.com/photo-1548369937-47519962c11a?auto=format&fit=crop&q=80&w=600&h=600",
+    image: "https://images.unsplash.com/photo-1548369937-47519962c11a?auto=format&fm=webp&fit=crop&q=80&w=600&h=600",
     featured: true
   },
   {
@@ -40,7 +40,7 @@ export const featuredProducts: Product[] = [
     price: "7,00 €",
     pricePrefix: "À partir de",
     ingredients: ["Sauce tomate", "Mozzarella", "olives noires naturelles"],
-    image: "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&q=80&w=600&h=600",
+    image: "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fm=webp&fit=crop&q=80&w=600&h=600",
     featured: true,
     tags: ["Végétarien"]
   },
@@ -51,7 +51,7 @@ export const featuredProducts: Product[] = [
     price: "9,00 €",
     pricePrefix: "À partir de",
     ingredients: ["Sauce tomate", "jambon", "champignons de Paris", "jaune d’œuf"],
-    image: "https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&q=80&w=600&h=600",
+    image: "https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fm=webp&fit=crop&q=80&w=600&h=600",
     featured: true,
     tags: ["Avec porc"]
   }

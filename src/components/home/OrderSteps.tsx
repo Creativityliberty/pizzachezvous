@@ -71,7 +71,12 @@ export const OrderSteps = () => {
             </div>
 
             <div className="rounded-2xl overflow-hidden aspect-video bg-gray-100 border border-[#111111]/5">
-              <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=40&w=800" alt="Pizza Ready" className="w-full h-full object-cover opacity-80" />
+              <img 
+                src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fm=webp&fit=crop&q=40&w=800" 
+                alt="Pizza Ready" 
+                className="w-full h-full object-cover opacity-80" 
+                loading="lazy"
+              />
             </div>
           </div>
         </motion.div>
