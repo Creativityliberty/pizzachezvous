@@ -1,5 +1,6 @@
 import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { SEO } from "../components/layout/SEO";
 import { 
   Search, 
   ShoppingBag, 
@@ -78,6 +79,10 @@ export const Menu = () => {
 
   return (
     <div className="flex flex-col bg-[#F8F4EA] overflow-x-hidden">
+      <SEO 
+        title="Menu & Carte" 
+        description="Découvrez la carte complète de Pizza Chez Vous : Pizzas base crème, base tomate, Calzones, Pizzinis et menus gourmands à Doudeville."
+      />
       
       {/* SECTION 1 — MENU HERO */}
       <section className="relative min-h-[65vh] bg-[#111111] overflow-hidden flex flex-col pt-32 md:pt-40 pb-20 px-5 md:px-8">

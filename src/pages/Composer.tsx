@@ -1,5 +1,6 @@
 import { useState, useMemo, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { SEO } from "../components/layout/SEO";
 import { 
   Pizza, 
   Plus, 
@@ -58,6 +59,10 @@ export const Composer = () => {
 
   return (
     <div className="flex flex-col bg-[#F8F4EA] overflow-x-hidden">
+      <SEO 
+        title="Composez votre pizza" 
+        description="Créez votre pizza sur mesure : base tomate ou crème, choisissez vos ingrédients préférés et commandez par téléphone à Pizza Chez Vous Doudeville."
+      />
       
       {/* SECTION 1 — COMPOSER HERO */}
       <section className="relative min-h-[70vh] bg-[#111111] overflow-hidden flex flex-col pt-32 md:pt-40 pb-20 px-5 md:px-8">

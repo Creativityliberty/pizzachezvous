@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { SEO } from "../components/layout/SEO";
 import { 
   Phone, 
   Pizza, 
@@ -22,6 +23,10 @@ import { fadeUp, popIn, staggerContainer } from "../lib/animations";
 export const Conditions = () => {
   return (
     <div className="flex flex-col bg-[#F8F4EA] overflow-x-hidden">
+      <SEO 
+        title="Infos Utiles & Conditions" 
+        description="Retrait magasin, prix, allergènes et informations pratiques. Tout ce qu'il faut savoir avant de commander chez Pizza Chez Vous."
+      />
       
       {/* SECTION 1 — INFORMATIONS HERO */}
       <section className="relative min-h-[62vh] bg-[#111111] overflow-hidden flex flex-col pt-32 md:pt-40 pb-20 px-5 md:px-8">

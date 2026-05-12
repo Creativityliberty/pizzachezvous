@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { SEO } from "../components/layout/SEO";
 import { 
   Phone, 
   Pizza, 
@@ -32,6 +33,10 @@ export const Contact = () => {
 
   return (
     <div className="flex flex-col bg-[#F8F4EA] overflow-x-hidden">
+      <SEO 
+        title="Contact & Magasins" 
+        description="Contactez vos magasins Pizza Chez Vous à Doudeville, Yerville et Octeville-sur-Mer. Commandez par téléphone pour un retrait rapide en boutique."
+      />
       
       {/* SECTION 1 — CONTACT HERO */}
       <section className="relative min-h-[68vh] bg-[#111111] overflow-hidden flex flex-col pt-32 md:pt-40 pb-20 px-5 md:px-8">
