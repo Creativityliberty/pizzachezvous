@@ -33,11 +33,11 @@ export const Hero = () => {
             initial="initial" animate="whileInView" variants={fadeUp(0)} viewport={{ once: true }}
           >
             <motion.div 
-              className="green-pill flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-semibold shadow-xl border border-white/10 mb-8"
+              className="green-pill flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-semibold shadow-xl border border-white/10 mb-8 w-fit"
               variants={fadeUp(0.1)}
             >
               <MapPin size={14} />
-              <span>Pizzeria locale · {store.city}</span>
+              <span>3 magasins en Normandie</span>
             </motion.div>
 
             <motion.div className="flex flex-col gap-1 w-full relative mb-6" variants={fadeUp(0.2)}>
@@ -57,22 +57,18 @@ export const Hero = () => {
             </p>
 
             <div className="flex flex-wrap items-center gap-4">
-              <a href={`tel:${store.phone}`} className="red-button flex items-center gap-3 px-8 py-4 rounded-full font-bold text-xl group">
+              <a href="#store-info" className="red-button flex items-center gap-3 px-8 py-4 rounded-full font-bold text-xl group">
                 <span className="tracking-tight">COMMANDER</span>
-                <ArrowRight size={22} className="group-hover:translate-x-2 transition-transform" />
+                <Phone size={22} className="group-hover:rotate-12 transition-transform" />
               </a>
               <a href="#carte" className="liquid-glass-food flex items-center gap-3 px-8 py-4 rounded-full font-bold text-xl text-white border border-white/20 transition-all hover:bg-white/10">
                 <Pizza size={22} />
                 <span>Voir la carte</span>
               </a>
-              <a href={`tel:${store.phone}`} className="flex md:hidden items-center gap-2 px-4 py-4 rounded-full font-bold text-[#00843D] hover:text-[#006B34] transition-colors">
-                <Phone size={18} />
-                <span>Appeler le magasin</span>
-              </a>
             </div>
             
-            <p className="text-white/40 text-xs font-bold uppercase tracking-widest mt-8 flex items-center gap-2">
-              Retrait magasin <span className="w-1 h-1 rounded-full bg-white/20"></span> {store.city} <span className="w-1 h-1 rounded-full bg-white/20"></span> Commande internet parfois fermée
+            <p className="text-white/40 text-xs font-bold uppercase tracking-widest mt-8 flex flex-wrap items-center gap-2">
+              Retrait magasin <span className="w-1 h-1 rounded-full bg-white/20"></span> Plusieurs boutiques <span className="w-1 h-1 rounded-full bg-white/20"></span> Commandes par téléphone
             </p>
           </motion.div>
 

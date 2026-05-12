@@ -28,20 +28,20 @@ export const Header = () => {
 
         {/* Right Actions */}
         <div className="hidden md:flex items-center gap-4">
-          <a href={`tel:${store.phone}`} className="flex items-center gap-2 text-[#FFF8E8] hover:text-[#FFD21A] transition-colors">
-            <Phone size={18} />
-            <span className="font-semibold">{store.formattedPhone}</span>
-          </a>
+          <Link to="/contact" className="flex items-center gap-2 text-[#FFF8E8] hover:text-[#FFD21A] transition-colors">
+            <MapPin size={18} />
+            <span className="font-semibold">Nos magasins</span>
+          </Link>
           
           <div className="flex items-center gap-3">
             <div className="green-pill flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-semibold">
               <ShoppingBag size={14} />
-              <span>Retrait magasin</span>
+              <span>Retrait</span>
             </div>
             
-            <a href={`tel:${store.phone}`} className="red-button flex items-center gap-2 px-5 py-2 rounded-full font-bold">
+            <Link to="/contact" className="red-button flex items-center gap-2 px-5 py-2 rounded-full font-bold">
               <span>Commander</span>
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -67,9 +67,9 @@ export const Header = () => {
               <ShoppingBag size={16} />
               Retrait magasin
             </div>
-            <a href={`tel:${store.phone}`} className="red-button flex items-center justify-center gap-2 px-4 py-3 rounded-lg font-bold text-center">
-              <PhoneCall size={18} /> Commander maintenant
-            </a>
+            <Link to="/contact" onClick={() => setIsOpen(false)} className="red-button flex items-center justify-center gap-2 px-4 py-3 rounded-lg font-bold text-center">
+              <PhoneCall size={18} /> Appeler un magasin
+            </Link>
           </div>
         </div>
       )}
